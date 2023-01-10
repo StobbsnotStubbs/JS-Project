@@ -1,3 +1,13 @@
+/* .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+} */
+/* using flex container to center the text had issues with remaining centered on smaller screens, likely due to the transform on the image track
+but text align works so whatever */
+
 h2 {
   color: white;
   text-align: center;
@@ -37,4 +47,16 @@ body {
   height: 64vmin;
   object-fit: cover;
   object-position: 100% center;
+}
+
+@media screen and (max-width: 740px) {
+  /* .flex-container {
+    width: 120%;
+  } */
+  h2 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 1rem;
+  }
 }
