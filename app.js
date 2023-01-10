@@ -53,14 +53,14 @@ const handleOnMove = (e) => {
   }
 };
 
-window.onmousedown = (e) => handleOnDown(e);
+window.addEventListener("mousedown", handleOnDown);
 
 window.ontouchstart = (e) => handleOnDown(e.touches[0]);
 
-window.onmouseup = (e) => handleOnUp(e);
+window.addEventListener("mouseup", handleOnUp);
 
 window.ontouchend = (e) => handleOnUp(e.touches[0]);
 
-window.onmousemove = (e) => handleOnMove(e);
+window.addEventListener("mousemove", handleOnMove);
 
 window.ontouchmove = (e) => handleOnMove(e.touches[0]);
