@@ -13,6 +13,7 @@ h2 {
   text-align: center;
   font-size: 2rem;
   font-family: "Rowdies", cursive;
+  overflow: hidden;
 }
 
 p {
@@ -20,6 +21,7 @@ p {
   text-align: center;
   font-size: 1rem;
   font-family: "Rowdies", cursive;
+  overflow: hidden;
 }
 body {
   height: 100vh;
@@ -40,6 +42,7 @@ body {
     -50%
   ); /* first value is tracked in JS to set the min-max value of the sldier, 2nd value shifts the image track up to the centre of the y axis */
   user-select: none;
+  overflow: hidden;
 }
 
 #image-track > .image {
@@ -49,14 +52,14 @@ body {
   object-position: 100% center;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 717px) {
   /* .flex-container {
     width: 120%;
   } */
   h2 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   p {
-    font-size: 1rem;
+    font-size: 4vw;
   }
 }
