@@ -52,6 +52,18 @@ body {
   object-position: 100% center;
 }
 
+.footer-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#box1,
+#box2,
+#box3 {
+  padding: 10px;
+}
+
 @media screen and (max-width: 717px) {
   /* .flex-container {
     width: 120%;
